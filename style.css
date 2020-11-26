@@ -87,3 +87,39 @@ img{
     position: relative;
 }
 
+
+@media screen and (max-width: 1200px){
+    img{
+        display: none;
+    }
+
+    body{
+        text-align: left;
+    }
+
+    form, div{
+        width: 100%;
+        height: auto;
+    }
+
+    div{
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .company, h1, h2{
+        margin-left: -8rem;
+    }
+
+    input, label{
+        margin-left: 0;
+    }
+
+    .perso{
+        margin-left: 3rem;
+    }
+
+    h1, h2{
+        line-height: 5rem;
+    }
+}
