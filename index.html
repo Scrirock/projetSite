@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/10b102adea.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <h1>Formulaire de contact</h1>
+    
+    <img src="logoUPTO.png" alt="logo upTo">
+    <img src="logoFace.png" alt="logo FaceThierache">
+
+    <form action="formulaire.php" method="post">
+        <h2>informations personnels</h2>
+        <div class="perso">
+            <label for="name">Prénom: </label>
+            <input type="text" id="name" name="user_name" required placeholder="ex: Pierre">
+            <label for="surname">Nom: </label>
+            <input type="text" id="surname" name="user_surname" required placeholder="ex: Dumont">
+            <label for="mail">Adresse E-mail: </label>
+            <input type="email" id="mail" name="user_mail" required placeholder="ex: pierre.dumont@gmail.com">
+            <label for="phone">Numéro de portable: </label>
+            <input type="tel" id="phone" name="user_phone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"
+                   required placeholder="ex: 06 12 34 56 78">
+        </div>
+
+        <h2>information de l'entreprise</h2>
+        <div class="company">
+            <label for="cName">Raison social: </label>
+            <input type="text" id="cName" name="company_name" required>
+            <label for="siret">Numéro de Siret: </label>
+            <input type="text" id="siret" name="company_siret" required>
+            <label for="cType">Statut juridique de votre entreprise: </label>
+            <input type="text" id="cType" name="company_type" required>
+            <label for="cActivity">Secteur d'activité: </label>
+            <input type="text" id="cActivity" name="company_activity" required>
+            <label for="cCity">Ville: </label>
+            <input type="text" id="cCity" name="company_city" required>
+        </div>
+
+        <button>Envoyer</button>
+
+    </form>
+
+</body>
+</html>
